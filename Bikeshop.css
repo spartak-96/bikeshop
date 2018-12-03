@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/Ubuntu-R.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Milkshake";
+    src: url("fonts/Milkshake.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu-L";
+    src: url("fonts/Ubuntu-L.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu-LI";
+    src: url("fonts/fontsULI/Ubuntu-LI.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OldStandardBold";
+    src: url("fonts/fontsOldB/OldStandard-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*fonts*/
+.ubuntu-r, .ubuntu-r * {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+}
+
+.ubuntu-l, .ubuntu-l * {
+    font-family: "Ubuntu-L", sans-serif;
+    font-weight: normal;
+}
+
+.ubuntu-li {
+    font-family: Ubuntu-LI, sans-serif;
+    font-weight: normal;
+}
+
+.milkshake-r, .milkshake-r * {
+    font-family: "Milkshake", sans-serif;
+    font-weight: normal;
+}
+
+.OldStandartTT, .OldStandartTT * {
+    font-family: 'Old Standard TT', serif;
+}
+
+.OLdStBold {
+    font-family: "OldStandardBold", sans-serif;
+    font-weight: normal;
+}
+
+/*fonts*/
+/*HEADER*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
+}
+
+.icon {
+    text-transform: capitalize;
+    font-size: 52px;
+}
+
+.nav {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style-type: none;
+}
+
+.nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.bascet {
+    text-transform: uppercase;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.header-wrap {
+    width: 80%;
+    display: flex;
+    margin: 21px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*HEADER*/
+/*MAIN*/
+/*main top*/
+.main-top {
+    text-align: center;
+    min-height: 100vh;
+    background: url("Exports/background.jpg") no-repeat center top;
+    background-size: cover;
+    position: relative;
+}
+
+.top-wrap {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.top-tit {
+    font-size: 45px;
+}
+
+.top-L {
+    font-size: 19px;
+    color: #9c9c9c;
+    margin: 10px 0 20px 0;
+
+}
+
+.play > img {
+    width: 7%;
+}
+
+.lair {
+    background-color: #3c3c3c;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*main top*/
+/*main center*/
+.main-center {
+    display: flex;
+    margin-top: 50px;
+}
+
+.center-text {
+    width: 50%;
+}
+
+.center-L {
+    color: #696969;
+    font-size: 16px;
+    position: relative;
+    left: 25%;
+    width: 70%;
+    margin: 15px 0;
+}
+
+.center-tit {
+    font-size: 41px;
+    color: #3c3c3c;
+    width: 70%;
+    position: relative;
+    left: 25%;
+}
+
+.center-text > a {
+    position: relative;
+    left: 25%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #949494;
+    background-color: #3c3c3c;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 20px;
+}
+
+.centerBike {
+    width: 50%;
+}
+
+.centerBike > img {
+    width: 80%;
+    height: 90vh;
+    box-shadow: 0 0 10px;
+}
+
+/*main center*/
+/*under center    */
+.under-center {
+    display: flex;
+    /*width: 100%;*/
+}
+
+.leftBike {
+    width: 50%;
+}
+
+.leftBike > img {
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+.underC-L {
+    width: 50%;
+    height: 25%;
+    color: #6a6a6a;
+    font-size: 16px;
+    margin-top: 80px;
+    margin-left: 30px;
+    display: inline-block;
+    border-left: 2px solid #dadada;
+    padding-left: 30px;
+    position: relative;
+}
+
+.underC-L > p {
+    width: 65%;
+}
+
+.underC-L::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    background: #dadada;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+}
+
+/*under center*/
+/*bike*/
+.bike {
+    text-align: center;
+}
+
+.bikeTit {
+    width: 50%;
+    margin: 20px auto;
+    font-size: 30px;
+    color: #3c3c3c;
+}
+
+.bikeL {
+    width: 40%;
+    margin: 0 auto;
+    color: #929292;
+    font-size: 16px;
+}
+
+.bikeImg > .ImgBike > img {
+    width: 60%;
+}
+
+.bikeImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.details > img {
+    margin: 10px 0;
+}
+
+#b1 {
+    top: -65vh;
+}
+
+#b3 {
+    top: -35vh;
+}
+
+.zoom {
+    background-color: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+}
+
+.zoom > img {
+    margin: 10px;
+}
+
+.circles {
+    width: 26px;
+    height: 26px;
+    background-color: #e6e6e6;
+    opacity: .8;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.incirc {
+    width: 20px;
+    height: 20px;
+    background-color: #3c3c3c;
+    border-radius: 100%;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#c1 {
+    top: -140px;
+    left: 315px;
+}
+
+#c2 {
+    top: -305px;
+    left: 435px;
+}
+
+#c3 {
+    top: -113px;
+    left: 413px;
+}
+
+#c4 {
+    top: -340px;
+    left: 530px;
+}
+
+#c5 {
+    top: -345px;
+    left: 606px
+}
+
+#c6 {
+    top: -80px;
+    left: 645px;
+}
+
+
+/*bike*/
+/*onbuttom*/
+.onButtom {
+    text-align: center;
+}
+
+.onButTit {
+    width: 50%;
+    margin: 20px auto;
+    font-size: 30px;
+    color: #3c3c3c;
+}
+
+.onButL {
+    width: 40%;
+    margin: 0 auto;
+    color: #929292;
+    font-size: 16px;
+}
+
+.onButDet-wrap {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.dets > img {
+    width: 60%;
+    height: 60%;
+}
+
+.detL {
+    font-size: 20px;
+    color: #3c3c3c;
+}
+
+.dets > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #949494;
+    background-color: #3c3c3c;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 20px;
+}
+
+
+/*onbuttom*/
+/*buttom*/
+.botImg > img {
+    width: 100%;
+}
+
+.bottom {
+    position: relative;
+    width: 100%;
+}
+
+.lairBot {
+    background-color: #3c3c3c;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.subscribe {
+    width: 70%;
+    height: 45%;
+    z-index: 5;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    text-align: center;
+}
+
+.subP {
+    font-size: 60px;
+    color: #3c3c3c;
+    padding-top: 60px;
+}
+
+.subL {
+    width: 90%;
+    font-size: 14px;
+    color: #929292;
+    margin: 10px auto;
+}
+
+.form > input {
+    height: 25px;
+    border: none;
+    margin: 20px -2px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.add {
+    background: #e8e8e8;
+}
+
+.mail {
+    background: #3c3c3c;
+    color: #fff;
+}
+
+/*buttom*/
+/*MAIN*/
+/*FOOTER*/
+footer {
+    position: relative;
+    top: -10px;
+    transform: translate(0, -100%);
+    z-index: 5;
+}
+
+.footer-wrap {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-wrap svg {
+    fill: #fff;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    color: #e8e8e8;
+    display: inline-block;
+}
+
+/*FOOTER*/
